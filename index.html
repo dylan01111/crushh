@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CONFESS KAY CRUSH</title>
+    <script type="text/javascript">
+        function showImageAndGIFs() {
+            alert("Hii Ciadra");
+            alert("may aaminin sana ako");
+            confirm("Ano yun?");
+
+            // Show the image after 1 second
+            setTimeout(function () {
+                document.getElementById('myImage').style.display = 'block';
+
+                // Show the GIFs after an additional 1 second
+                setTimeout(function () {
+                    document.getElementById('gif1').style.display = 'inline';
+                    document.getElementById('gif2').style.display = 'inline';
+                }, 1000);
+            }, 1000);
+        }
+    </script>
+</head>
+
+<body onload="showImageAndGIFs()">
+    <!-- Hidden image initially -->
+    <img id="myImage" src="maxresdefault.jpg" style="display:none;">
+
+    <!-- Animated GIFs (initially hidden) -->
+    <img id="gif1" src="tenor (1).gif" alt="Animated GIF" style="display:none;">
+    <img id="gif2" src="tenor.gif" style="display:none;">
+</body>
+
+</html>
